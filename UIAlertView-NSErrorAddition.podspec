@@ -1,38 +1,16 @@
-#
-# Be sure to run `pod lib lint UIAlertView-NSErrorAddition.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "UIAlertView-NSErrorAddition"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UIAlertView-NSErrorAddition."
-  s.description      = <<-DESC
-                       An optional longer description of UIAlertView-NSErrorAddition
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/UIAlertView-NSErrorAddition"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "UIAlertView + NSError category library."
+  s.homepage         = "https://github.com/azu/UIAlertView-NSErrorAddition"
+  s.screenshots      = "http://monosnap.com/image/wJypNE3I2daqBECDae1T8T0tOvcbip.png"
   s.license          = 'MIT'
-  s.author           = { "azu" => "azuciao@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UIAlertView-NSErrorAddition.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = {"azu" => "azuciao@gmail.com"}
+  s.source           = {:git => "https://github.com/azu/UIAlertView-NSErrorAddition.git", :tag => s.version.to_s}
+  s.social_media_url = 'https://twitter.com/azu_re'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'UIAlertView-NSErrorAddition' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

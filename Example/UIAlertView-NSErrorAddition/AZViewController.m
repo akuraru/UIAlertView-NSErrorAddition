@@ -7,6 +7,7 @@
 //
 
 #import "AZViewController.h"
+#import "UIAlertView+NSErrorAddition.h"
 
 @interface AZViewController ()
 
@@ -14,16 +15,21 @@
 
 @implementation AZViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidAppear:(BOOL) animated {
+    [super viewDidAppear:animated];
+    [self showError];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (void)showError {
+    NSDictionary *userInfo = @{
+        NSLocalizedDescriptionKey : @"Network Error",
+        NSLocalizedFailureReasonErrorKey : @"Doesn't connect to network",
+        NSLocalizedRecoverySuggestionErrorKey : @"Reload page after check the network.",
+        NSLocalizedRecoveryOptionsErrorKey : @[@"OK"]
+    };
 
+    NSError *error = [NSError errorWithDomain:[[NSBundle bundleForClass:[self class]] bundleIdentifier] code:0 userInfo:userInfo];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithError:error];
+    [alertView show];
+}
 @end

@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (0.3.1)
+  - Specta (0.2.1)
+  - UIAlertView-NSErrorAddition (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta (~> 0.2.1)
+  - UIAlertView-NSErrorAddition (from `../`)
+
+EXTERNAL SOURCES:
+  UIAlertView-NSErrorAddition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  UIAlertView-NSErrorAddition: ab55f1d45620caf71f4c5ba0084bb901693e2bf8
+
+COCOAPODS: 0.33.1

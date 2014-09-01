@@ -5,11 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/UIAlertView-NSErrorAddition.svg?style=flat)](http://cocoadocs.org/docsets/UIAlertView-NSErrorAddition)
 [![Platform](https://img.shields.io/cocoapods/p/UIAlertView-NSErrorAddition.svg?style=flat)](http://cocoadocs.org/docsets/UIAlertView-NSErrorAddition)
 
-## Usage
+UIAlertView + NSError category library.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+![img](http://monosnap.com/image/wJypNE3I2daqBECDae1T8T0tOvcbip.png)
 
 ## Installation
 
@@ -18,11 +16,35 @@ it, simply add the following line to your Podfile:
 
     pod "UIAlertView-NSErrorAddition"
 
-## Author
+## Usage
 
-azu, azuciao@gmail.com
+```objc
+    NSDictionary *userInfo = @{
+    NSLocalizedDescriptionKey : @"Network Error",
+    NSLocalizedFailureReasonErrorKey : @"Doesn't connect to network",
+    NSLocalizedRecoverySuggestionErrorKey : @"Reload page after check the network.",
+    NSLocalizedRecoveryOptionsErrorKey : @[@"OK"]
+};
+
+NSError *error = [NSError errorWithDomain:[[NSBundle bundleForClass:[self class]] bundleIdentifier] code:0 userInfo:userInfo];
+UIAlertView *alertView = [[UIAlertView alloc] initWithError:error];
+[alertView show];
+```
+
+Each key mapping to UIAlertView parts.
+
+![img](http://monosnap.com/image/wJypNE3I2daqBECDae1T8T0tOvcbip.png)
+
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
 ## License
 
-UIAlertView-NSErrorAddition is available under the MIT license. See the LICENSE file for more info.
+MIT
 
