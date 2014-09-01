@@ -1,0 +1,10 @@
+target 'UIAlertView-NSErrorAddition', :exclusive => true do
+  pod "UIAlertView-NSErrorAddition", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "UIAlertView-NSErrorAddition", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
