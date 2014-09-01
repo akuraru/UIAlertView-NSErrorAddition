@@ -45,6 +45,10 @@ Each key mapping to UIAlertView parts.
 ![img](http://monosnap.com/image/wJypNE3I2daqBECDae1T8T0tOvcbip.png)
 
 
+## More Detail
+
+- [iPhoneアプリの通信エラー処理を考える - iOS Advent Calendar 2011 - ninjinkun&#39;s diary](http://ninjinkun.hatenablog.com/entry/2011/12/23/224918 "iPhoneアプリの通信エラー処理を考える - iOS Advent Calendar 2011 - ninjinkun&#39;s diary")
+
 ## Contributing
 
 1. Fork it!
