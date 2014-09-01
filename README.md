@@ -18,8 +18,17 @@ it, simply add the following line to your Podfile:
 
 ## Usage
 
+You can try it:
+
+```
+pod try UIAlertView-NSErrorAddition
+```
+
+Basic use case.
+
+
 ```objc
-    NSDictionary *userInfo = @{
+NSDictionary *userInfo = @{
     NSLocalizedDescriptionKey : @"Network Error",
     NSLocalizedFailureReasonErrorKey : @"Doesn't connect to network",
     NSLocalizedRecoverySuggestionErrorKey : @"Reload page after check the network.",
