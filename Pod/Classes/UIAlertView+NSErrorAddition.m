@@ -8,7 +8,7 @@
 
 @implementation UIAlertView (NSErrorAddition)
 - (instancetype)initWithError:(NSError *) error {
-    self = [super init];
+    self = [self init];
     if (self) {
         self.title = [error localizedDescription];
         NSMutableArray *messageArray = [NSMutableArray array];
