@@ -10,11 +10,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   UIAlertView-NSErrorAddition:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
-  UIAlertView-NSErrorAddition: ab55f1d45620caf71f4c5ba0084bb901693e2bf8
+  Expecta: a354d4633409dd9fe8c4f5ff5130426adbe31628
+  Specta: 15a276a6343867b426d5ed135d5aa4d04123a573
+  UIAlertView-NSErrorAddition: c77f09db1dbd184d5e179e0a65d91c7813980f6d
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.39.0

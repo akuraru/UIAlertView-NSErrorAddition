@@ -40,6 +40,8 @@
 		02A28BD583A242009D204690 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA0BD2F5FB5081F4409780D /* UIAlertView-NSErrorAddition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UIAlertView-NSErrorAddition.podspec"; path = "../UIAlertView-NSErrorAddition.podspec"; sourceTree = "<group>"; };
 		4639ED8792D44A3DA2BDD7C4 /* libPods-UIAlertView-NSErrorAddition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIAlertView-NSErrorAddition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4704C509062EBE73E7004A37 /* Pods-UIAlertView-NSErrorAddition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIAlertView-NSErrorAddition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIAlertView-NSErrorAddition/Pods-UIAlertView-NSErrorAddition.debug.xcconfig"; sourceTree = "<group>"; };
+		591BF0CA1C507B47A8BCB061 /* Pods-UIAlertView-NSErrorAddition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIAlertView-NSErrorAddition.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIAlertView-NSErrorAddition/Pods-UIAlertView-NSErrorAddition.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* UIAlertView-NSErrorAddition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIAlertView-NSErrorAddition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,10 +63,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		80ED29826CE14E8FB6535050 /* Pods-UIAlertView-NSErrorAddition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIAlertView-NSErrorAddition.xcconfig"; path = "Pods/Pods-UIAlertView-NSErrorAddition.xcconfig"; sourceTree = "<group>"; };
-		A42F082C65A24C81AD0BECB2 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		B766D66C28AA9022077FAC6A /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C6A5F8036AAADCEAD26378CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E97F15F37AC99A4C6074E551 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9050F74EF0F8391165863E1 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				A42F082C65A24C81AD0BECB2 /* Pods-Tests.xcconfig */,
-				80ED29826CE14E8FB6535050 /* Pods-UIAlertView-NSErrorAddition.xcconfig */,
+				914A3DE2EF4A6A75626FC753 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +184,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		914A3DE2EF4A6A75626FC753 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9050F74EF0F8391165863E1 /* Pods-Tests.debug.xcconfig */,
+				B766D66C28AA9022077FAC6A /* Pods-Tests.release.xcconfig */,
+				4704C509062EBE73E7004A37 /* Pods-UIAlertView-NSErrorAddition.debug.xcconfig */,
+				591BF0CA1C507B47A8BCB061 /* Pods-UIAlertView-NSErrorAddition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +207,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				54995A18DB1642DEA366B65E /* Copy Pods Resources */,
+				6A17D0D8D0F9D96D47B54D04 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +227,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				9D42FD9A1DD84265A272FB85 /* Copy Pods Resources */,
+				23C36C2E684556A45CA7B6AA /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AZ;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = azu;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -282,6 +296,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23C36C2E684556A45CA7B6AA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FDF7563D484441084E73850 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,7 +353,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-UIAlertView-NSErrorAddition-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIAlertView-NSErrorAddition/Pods-UIAlertView-NSErrorAddition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A17D0D8D0F9D96D47B54D04 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIAlertView-NSErrorAddition/Pods-UIAlertView-NSErrorAddition-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D42FD9A1DD84265A272FB85 /* Copy Pods Resources */ = {
@@ -339,7 +383,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,6 +471,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -483,13 +528,14 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80ED29826CE14E8FB6535050 /* Pods-UIAlertView-NSErrorAddition.xcconfig */;
+			baseConfigurationReference = 4704C509062EBE73E7004A37 /* Pods-UIAlertView-NSErrorAddition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIAlertView-NSErrorAddition/UIAlertView-NSErrorAddition-Prefix.pch";
 				INFOPLIST_FILE = "UIAlertView-NSErrorAddition/UIAlertView-NSErrorAddition-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.UIAlertView-NSErrorAddition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -497,13 +543,14 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80ED29826CE14E8FB6535050 /* Pods-UIAlertView-NSErrorAddition.xcconfig */;
+			baseConfigurationReference = 591BF0CA1C507B47A8BCB061 /* Pods-UIAlertView-NSErrorAddition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIAlertView-NSErrorAddition/UIAlertView-NSErrorAddition-Prefix.pch";
 				INFOPLIST_FILE = "UIAlertView-NSErrorAddition/UIAlertView-NSErrorAddition-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.UIAlertView-NSErrorAddition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -511,7 +558,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A42F082C65A24C81AD0BECB2 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = F9050F74EF0F8391165863E1 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIAlertView-NSErrorAddition.app/UIAlertView-NSErrorAddition";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -526,6 +573,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -534,7 +582,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A42F082C65A24C81AD0BECB2 /* Pods-Tests.xcconfig */;
+			baseConfigurationReference = B766D66C28AA9022077FAC6A /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIAlertView-NSErrorAddition.app/UIAlertView-NSErrorAddition";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -545,6 +593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

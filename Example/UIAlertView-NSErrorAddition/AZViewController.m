@@ -7,7 +7,7 @@
 //
 
 #import "AZViewController.h"
-#import "UIAlertView+NSErrorAddition.h"
+#import "UIAlertController+NSErrorAddition.h"
 
 @interface AZViewController ()
 
@@ -29,7 +29,7 @@
     };
 
     NSError *error = [NSError errorWithDomain:[[NSBundle bundleForClass:[self class]] bundleIdentifier] code:0 userInfo:userInfo];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithError:error];
-    [alertView show];
+    UIAlertController *alertController = [UIAlertController alertControllerWithError:error];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 @end
