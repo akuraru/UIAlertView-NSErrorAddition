@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "UIAlertView-NSErrorAddition"
-  s.version          = "0.1.1"
+  s.version          = "1.0.0"
   s.summary          = "UIAlertView + NSError category library."
   s.homepage         = "https://github.com/azu/UIAlertView-NSErrorAddition"
   s.screenshots      = "http://monosnap.com/image/wJypNE3I2daqBECDae1T8T0tOvcbip.png"
