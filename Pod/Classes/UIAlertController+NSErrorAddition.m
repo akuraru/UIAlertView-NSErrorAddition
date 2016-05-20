@@ -10,7 +10,7 @@
 + (instancetype)alertControllerWithError:(NSError *)error {
     NSString *title = [error localizedDescription];
     NSString *message = [self messageForError:error];
-    UIAlertController *controller = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *controller = [[self class] alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     NSArray *optionTitles = [error localizedRecoveryOptions];
     for (NSString *title in optionTitles) {
         [controller addAction:[UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:nil]];
